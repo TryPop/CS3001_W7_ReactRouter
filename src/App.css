@@ -115,3 +115,222 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Thermostat styles */
+.weather-management-hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.weather-management-hub h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.climate-value-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.climate-value-display h2 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.climate-value-display p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.climate-control-panel {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.climate-control-panel button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.climate-control-panel button:hover {
+  background-color: #e0e0e0;
+}
+
+.climate-control-panel button:active {
+  background-color: #d0d0d0;
+}
+
+/* Timer styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-family: inherit;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.completion-message {
+  background: #f0f0f0;
+  color: #333;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.completion-message h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.timer-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.time-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  min-width: 80px;
+}
+
+.time-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.time-separator {
+  font-size: 2rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.time-setter {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.time-setter h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.time-inputs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 70px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.input-group input:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-pause {
+  background: #ff9800;
+  color: white;
+}
+
+.btn-reset {
+  background: #f44336;
+  color: white;
+}

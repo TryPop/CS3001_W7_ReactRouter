@@ -1,28 +1,44 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Achievements from './components/Achievements';
-import Thermostat from './components/Thermostat';
-import Timer from './components/Timer';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Achievements from "./components/Achievements";
+import Thermostat from "./components/Thermostat";
+import Timer from "./components/Timer";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/education">Education</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/experience">Experience</Link></li>
-            <li><Link to="/achievements">Achievements</Link></li>
-            <li><Link to="/thermostat">Thermostat</Link></li>
-            <li><Link to="/timer">Timer</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/education">Education</Link>
+            </li>
+            <li>
+              <Link to="/skills">Skills</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/experience">Experience</Link>
+            </li>
+            <li>
+              <Link to="/achievements">Achievements</Link>
+            </li>
+            <li>
+              <Link to="/thermostat">Thermostat</Link>
+            </li>
+            <li>
+              <Link to="/timer">Timer</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -36,7 +52,7 @@ function App() {
           <Route path="/timer" element={<Timer />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
