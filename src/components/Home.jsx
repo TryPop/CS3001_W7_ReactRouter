@@ -2,11 +2,23 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>This is my personal summary. I am a software engineer with experience in React, Node.js, and more.</p>
-      {/* Optional profile picture */}
-      <img src="https://via.placeholder.com/150" alt="Profile" />
+    <div className="header">
+      <div className="header-row">
+        {/* name and social links on left */}
+        <div className="left-info">
+          <h1>Saran Shankar</h1>
+          <div className="social-links">
+            <a href="https://linkedin.com/in/rsarans186">linkedin.com/in/rsarans186</a>
+            <span className="dot">•</span>
+            <a href="https://github.com/try3d">github.com/try3d</a>
+          </div>
+        </div>
+        {/* contact details on right */}
+        <div className="contact-info">
+          <div>Email: <a href="mailto:rsarans186@gmail.com">rsarans186@gmail.com</a></div>
+          <div>Mobile: <a href="tel:+917845911685">+91 78459 11865</a></div>
+        </div>
+      </div>
     </div>
   );
 };
